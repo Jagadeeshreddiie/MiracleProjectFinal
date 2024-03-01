@@ -21,7 +21,7 @@ const VehicleDiagnosis = () => {
     };
 
     return (
-        <div style={{textAlign:"center",height:'100vh'}}>
+        <div className='diagnosisSolve' style={{textAlign:"center",height:'100vh'}}>
             <h1>Vehicle Diagnosis</h1>
             <h3>Type yes or no </h3>
             <h4>if the asking troubleshoot is Good then type "yes" otherwise just type "no"</h4>
@@ -45,7 +45,7 @@ const VehicleDiagnosis = () => {
                 <input type="text" value={fuelLevel} onChange={(e) => setFuelLevel(e.target.value)} />
                 <br/>
                 <br/>
-                <button type="submit">Diagnose</button>
+                <button type="submit" className='butt mech'>Diagnose</button>
             </form>
 
             {diagnosisResult && (

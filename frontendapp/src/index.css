@@ -57,6 +57,8 @@ body{
   text-decoration: none;
   list-style: none;
 }
+
+
 .title{
   gap:30px;
   display: flex;
@@ -231,3 +233,53 @@ flex-direction: column;
   max-width:1000px;
   width:100%;
 } */
+
+@media screen and (max-width:700px){
+  .title{
+    display:none;
+  }
+  .home-container.home{
+    margin:40px;
+    padding:30px;
+  }
+  .diagnosisSolve{
+    padding:0 40px;
+  }
+  .diagnosis{
+    min-width:500px;
+    width:100%;
+  }
+  .mechanic-home{
+    grid-template-columns: 1fr;
+  }
+  .diag-home.mechanic-home{
+    margin:0 40px;
+  }
+  .main-home.diagnosis{
+    min-width:200px;
+    width:95%;
+  }
+  .register-home{
+    margin:0 70px;
+    max-width:400px;
+    padding:5px;
+    margin-bottom:30px;
+  }
+  .register-home form input{
+    padding:0 10px;
+  }
+  .diag-home.mechanic-home.orders{
+    margin-right:20px;
+  }
+}
+
+.diagnosisSolve input{
+  border:none;
+  border-radius: 5px;
+  width:200px;
+}
+.diagnosisSolve label{
+  background-color: rgb(144, 222, 222);
+  border-radius:10px;
+  color:black;
+}
