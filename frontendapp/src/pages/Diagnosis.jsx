@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { questions } from "../Data";
 import DiagnosisSolve from './DiagnosisSolve';
 import Mechanic from "./Mechanic";
 const Diagnosis = () => {

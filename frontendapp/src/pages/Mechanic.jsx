@@ -14,7 +14,7 @@ const Mechanic = () => {
   useEffect(() => {
     const fetchMechanics = async () => {
       try {
-        const response = await fetch("http://localhost:30021/mechanics/");
+        const response = await fetch("https://miracle-project-final.vercel.app/mechanics/");
         if (!response.ok) {
           throw new Error("Failed to fetch mechanics");
         }

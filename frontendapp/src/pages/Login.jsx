@@ -13,7 +13,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("http://localhost:30021/login", {
+            const response = await fetch("https://miracle-project-final.vercel.app/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

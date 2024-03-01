@@ -8,7 +8,7 @@ const navigate=useNavigate();
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await fetch("http://localhost:30021/orders/");
+        const response = await fetch("https://miracle-project-final.vercel.app/orders/");
         if (!response.ok) {
           throw new Error("Failed to fetch orders");
         }
@@ -27,7 +27,7 @@ const navigate=useNavigate();
 
   const handleAccept = async (id) => {
     try {
-      const response = await fetch("http://localhost:30021/accept", {
+      const response = await fetch("https://miracle-project-final.vercel.app/accept", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

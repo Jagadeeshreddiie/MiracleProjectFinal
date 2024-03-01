@@ -34,7 +34,7 @@ const Register = () => {
             special
         };
         try {
-            const response = await fetch("http://localhost:30021/register/", {
+            const response = await fetch("https://miracle-project-final.vercel.app/register/", {
                 method: "POST",
                 headers: {
                     "Content-type": "application/json",

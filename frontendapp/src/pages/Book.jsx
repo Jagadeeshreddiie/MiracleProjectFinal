@@ -21,7 +21,7 @@ const Book = () => {
         };
         console.log(newDat);
         try {
-            const response = await fetch("http://localhost:30021/book/", {
+            const response = await fetch("https://miracle-project-final.vercel.app/book/", {
                 method: "POST",
                 headers: {
                     "Content-type": "application/json",
